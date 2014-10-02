@@ -1,0 +1,341 @@
+/*Reset para navegadores*/
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+/*Inserto fonts que usare*/
+@font-face{
+	font-family: "chapa";
+	src: url('font/Champagne.ttf');
+
+}
+
+p,h1,a{
+	font-family: "chapa";
+
+}
+body{
+		font-family: "chapa";
+		font-size: 20px;
+		width: 100%;
+		height: 100%;
+		background: black;
+}
+
+
+
+ul li{
+	text-align: justify;
+	text-decoration: none;
+	list-style: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 30px;
+box-sizing:border-box; 
+	-moz-box-sizing:border-box; /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+
+}
+header{
+	width: 100%;
+	height: 10%;
+	background: #fff;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	z-index: 2;
+	color: #212121;
+	padding: 1%;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box; /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+	display: inline-block;
+}
+header span{
+	color: #616161;
+	font-size: 23px;
+
+	display: inline-block;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box; /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+}
+header h1{
+	width: 85%;
+	text-align: center;
+	overflow: hidden;
+	display: inline-block;
+}
+
+
+header img{
+	width:10%; 
+	display: inline-block;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box; /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+}
+nav.mpokedex{
+	width: 18%;
+	min-width: 160px;
+	height: 90%;
+	top: 10%;
+	position: fixed;
+	background: rgba(50,50,50,1);
+	margin: 0px 0px 0px 0px;
+	margin-left: 0px;
+	margin-top: 1px;
+	padding: 10px;
+	overflow-y:scroll;
+	display: inline-block;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box; /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+}
+
+nav.mpokedex::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+nav.mpokedex::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+nav.mpokedex::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.0);
+	background: transparent;
+	/*background-color: #D62929;*/
+}
+nav.mpokedex:hover::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.0);
+	
+	background-color: #D62929;
+}
+nav.mpokedex ul li{
+	background: transparent;
+	transition: background 0.5s;
+
+}
+nav.mpokedex ul li:hover{
+	background: #575757;
+}
+#pokemons{
+	width: 82%;
+	height: 85%;
+	background: #f2f2f2;
+	bottom: 5%;
+	right: 0px;
+	position: fixed;
+	z-index: 100;
+	
+	
+}
+
+#imagen{
+	top: 0%;
+	border-radius: 50%;
+    position: relative;
+    float: left;
+	width: 25%;
+	display: inline-block;
+	background: #a4a4a4;
+	overflow: hidden;
+}
+#imagen img{
+	width: 100%;
+
+}
+
+#pokemons span{
+	width: 50%;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	font-size: 1.5em;
+	margin-right: 0px;
+	text-align: justify;
+	display: inline-block;
+
+}
+#pokemons p{
+	width: 100%;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	font-size: 30px;
+	margin-right: 10px;
+
+}
+section.info{
+	max-height: 323px;
+	overflow-y:scroll;
+	width: 75%; 
+	position: relative;
+	float: left;
+	display: inline-block;
+	top: 0%;
+	right: 0px;
+	
+
+}
+#tipo,#debilidad,#vad,#pinf{
+	width: 45%;
+	margin: 0px;
+	display: inline-block;
+
+}
+span.n{
+display: none;
+}
+span.v{
+	background: #30a7d7
+}
+span.a{
+	background: #dd2d51
+}
+span.d{
+	background: #0072b0;
+}
+p.i{
+	background: #313131;
+}
+span.debil{
+	background: #a4a4a4;
+
+}
+
+span.Planta{
+	background: #9bcc50; 
+	}
+span.Veneno{
+	background: #b97fc9; 
+
+	}
+span.Fuego{
+	background: #fd7d24;
+}
+span.Volador{
+	background: #b9dfe5;
+}
+span.Agua{
+	background: #4592c4;
+}
+span.Bicho{
+	background: #729f3f;
+}
+span.Normal{
+	background: #A4ACAF;
+}
+span.Electrico{
+	background: #eed535;
+}
+span.Tierra{
+	background: #edce7b;
+}
+span.Hada{
+	background: #fdb9e9;
+}
+footer{
+	text-align: right;
+	background: #323232;
+	font-size: 23px;
+	position: absolute;
+	width: 82%;
+	height: 5%;
+	bottom: 0px;
+	right: 0%;
+	color: #fff;
+	padding: 0% 1%;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box; /* Firefox */ 
+	-webkit-box-sizing:border-box; /* Safari */
+
+}
+a{
+	color: #99ca41
+}
+#mas{
+
+	width: 80%;
+	height: 20%;
+	position: relative;
+	margin: 10px;
+	top: -9%;
+
+}
+#mas img.mas{
+	width: 15%;
+	background: #a4a4a4;
+	position: relative;
+	border-radius: 0% 50% 50% 50%;
+	display: inline-block;
+	left: 85% ;
+	cursor: pointer;
+	margin: 0px;
+}
+#mas img.menos{
+	width: 15%;
+	position: relative;
+	background: #a4a4a4;
+	border-radius: 50% 0% 50% 50%;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0px;
+}
+#mas span.menos{
+
+	background: #a4a4a4;
+	width: 10%;
+	position: absolute;
+	border-radius: 0px 10px 10px 0px;
+	top:0px;
+	cursor: pointer;
+}
+#mas span.mas{
+	background: #a4a4a4;
+	width: 10%;
+	text-align: right;
+	position: absolute;
+	border-radius: 10px 0px 0px 10px;
+	top:0px;
+	right: 0%;
+	cursor: pointer;
+
+}
+section.info::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+section.info::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+section.info::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.0);
+	background: transparent;
+	/*background-color: #D62929;*/
+}
+section.info:hover::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.0);
+	
+	background-color: #D62929;
+}
